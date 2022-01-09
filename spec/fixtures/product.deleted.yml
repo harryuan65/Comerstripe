@@ -1,0 +1,19 @@
+---
+id: prod_Kvvv4cJRUqKLNz
+object: product
+active: false
+attributes: []
+created: 1641744930
+description:
+images: []
+livemode: false
+metadata: {}
+name: CatToy
+package_dimensions:
+shippable:
+statement_descriptor:
+tax_code:
+type: service
+unit_label:
+updated: 1641745269
+url:
