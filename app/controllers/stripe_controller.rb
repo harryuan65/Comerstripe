@@ -30,7 +30,7 @@ class StripeController < ApplicationController
       puts "Unhandled event type: #{event.type}"
     end
     # stuff here
-    File.open(Rails.root.join("spec/fixtures/#{event.type}.yml"), 'a') do |f|
+    File.open(Rails.root.join("spec/fixtures/#{event.type}.yml"), 'w') do |f|
       f.write event.data.object.as_json.to_yaml
     end
   end

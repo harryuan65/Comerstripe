@@ -1,5 +1,5 @@
 ---
-id: ch_3KG3fvFUSUvjNxGl2ZVGeNFw
+id: ch_3KG5T5FUSUvjNxGl1dIT7JaY
 object: charge
 amount: 2000
 amount_captured: 2000
@@ -7,7 +7,7 @@ amount_refunded: 0
 application:
 application_fee:
 application_fee_amount:
-balance_transaction: txn_3KG3fvFUSUvjNxGl22F0zdTf
+balance_transaction: txn_3KG5T5FUSUvjNxGl15JVfdst
 billing_details:
   address:
     city:
@@ -21,7 +21,7 @@ billing_details:
   phone:
 calculated_statement_descriptor: Stripe
 captured: true
-created: 1641743479
+created: 1641750371
 currency: usd
 customer:
 description: "(created by Stripe CLI)"
@@ -40,12 +40,12 @@ outcome:
   network_status: approved_by_network
   reason:
   risk_level: normal
-  risk_score: 43
+  risk_score: 60
   seller_message: Payment complete.
   type: authorized
 paid: true
-payment_intent: pi_3KG3fvFUSUvjNxGl2DHJmM2a
-payment_method: pm_1KG3fvFUSUvjNxGlS2QWTG9F
+payment_intent: pi_3KG5T5FUSUvjNxGl1hSM9roq
+payment_method: pm_1KG5T5FUSUvjNxGlHMK677Nz
 payment_method_details:
   card:
     brand: visa
@@ -66,110 +66,14 @@ payment_method_details:
   type: card
 receipt_email:
 receipt_number:
-receipt_url: https://pay.stripe.com/receipts/acct_1KFvScFUSUvjNxGl/ch_3KG3fvFUSUvjNxGl2ZVGeNFw/rcpt_KvvW4UB9VKLRPQMo5DpPD91h67N9eeE
+receipt_url: https://pay.stripe.com/receipts/acct_1KFvScFUSUvjNxGl/ch_3KG5T5FUSUvjNxGl1dIT7JaY/rcpt_KvxN8RzWu3UI8w8TOFFdPCBA5yBW1JE
 refunded: false
 refunds:
   object: list
   data: []
   has_more: false
   total_count: 0
-  url: "/v1/charges/ch_3KG3fvFUSUvjNxGl2ZVGeNFw/refunds"
-review:
-shipping:
-  address:
-    city: San Francisco
-    country: US
-    line1: 510 Townsend St
-    line2:
-    postal_code: '94103'
-    state: CA
-  carrier:
-  name: Jenny Rosen
-  phone:
-  tracking_number:
-source:
-source_transfer:
-statement_descriptor:
-statement_descriptor_suffix:
-status: succeeded
-transfer_data:
-transfer_group:
----
-id: ch_3KG5NbFUSUvjNxGl0hzsnurr
-object: charge
-amount: 2000
-amount_captured: 2000
-amount_refunded: 0
-application:
-application_fee:
-application_fee_amount:
-balance_transaction: txn_3KG5NbFUSUvjNxGl0Lgd0JJW
-billing_details:
-  address:
-    city:
-    country:
-    line1:
-    line2:
-    postal_code:
-    state:
-  email:
-  name:
-  phone:
-calculated_statement_descriptor: Stripe
-captured: true
-created: 1641750031
-currency: usd
-customer:
-description: "(created by Stripe CLI)"
-destination:
-dispute:
-disputed: false
-failure_code:
-failure_message:
-fraud_details: {}
-invoice:
-livemode: false
-metadata: {}
-on_behalf_of:
-order:
-outcome:
-  network_status: approved_by_network
-  reason:
-  risk_level: normal
-  risk_score: 35
-  seller_message: Payment complete.
-  type: authorized
-paid: true
-payment_intent: pi_3KG5NbFUSUvjNxGl0qEj4tkE
-payment_method: pm_1KG5NaFUSUvjNxGl9Dep427A
-payment_method_details:
-  card:
-    brand: visa
-    checks:
-      address_line1_check:
-      address_postal_code_check:
-      cvc_check:
-    country: US
-    exp_month: 1
-    exp_year: 2023
-    fingerprint: 3X8tJ0hhJJtKQ3mq
-    funding: credit
-    installments:
-    last4: '4242'
-    network: visa
-    three_d_secure:
-    wallet:
-  type: card
-receipt_email:
-receipt_number:
-receipt_url: https://pay.stripe.com/receipts/acct_1KFvScFUSUvjNxGl/ch_3KG5NbFUSUvjNxGl0hzsnurr/rcpt_KvxIEnGngKBlMrpm89Hz6yTXFiPpHlx
-refunded: false
-refunds:
-  object: list
-  data: []
-  has_more: false
-  total_count: 0
-  url: "/v1/charges/ch_3KG5NbFUSUvjNxGl0hzsnurr/refunds"
+  url: "/v1/charges/ch_3KG5T5FUSUvjNxGl1dIT7JaY/refunds"
 review:
 shipping:
   address:
