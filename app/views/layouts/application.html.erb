@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="https://stripe-samples.github.io/developer-office-hours/demo.css">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+  <div id="main">
+    <div id="container">
+      <div id="panel">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+    <!-- also works here-->
+    <!--<script src="https://js.stripe.com/v3/"></script> -->
   </body>
 </html>
