@@ -1,0 +1,57 @@
+---
+id: price_1KG41mFUSUvjNxGlkaLEznTX
+object: price
+active: true
+billing_scheme: per_unit
+created: 1641744834
+currency: twd
+livemode: false
+lookup_key:
+metadata: {}
+nickname:
+product: prod_KvvtZTJOGRhINy
+recurring:
+tax_behavior: unspecified
+tiers_mode:
+transform_quantity:
+type: one_time
+unit_amount: 99900
+unit_amount_decimal: '99900'
+---
+id: price_1KG43KFUSUvjNxGlnHqg7zi0
+object: price
+active: true
+billing_scheme: per_unit
+created: 1641744930
+currency: sgd
+livemode: false
+lookup_key:
+metadata: {}
+nickname:
+product: prod_Kvvv4cJRUqKLNz
+recurring:
+tax_behavior: unspecified
+tiers_mode:
+transform_quantity:
+type: one_time
+unit_amount: 1200
+unit_amount_decimal: '1200'
+---
+id: price_1KG45gFUSUvjNxGlPCkQ0Z62
+object: price
+active: true
+billing_scheme: per_unit
+created: 1641745076
+currency: sgd
+livemode: false
+lookup_key:
+metadata: {}
+nickname:
+product: prod_Kvvxm4y8aR7jwY
+recurring:
+tax_behavior: unspecified
+tiers_mode:
+transform_quantity:
+type: one_time
+unit_amount: 9900
+unit_amount_decimal: '9900'

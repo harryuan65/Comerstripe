@@ -1,0 +1,58 @@
+---
+id: prod_KvvtZTJOGRhINy
+object: product
+active: true
+attributes: []
+created: 1641744834
+description: Test data
+images:
+- https://files.stripe.com/links/MDB8YWNjdF8xS0Z2U2NGVVNVdmpOeEdsfGZsX3Rlc3RfN3pNUkFiOXRNdExoZVlESkFGcTdhcVYy00Q9tS7dOp
+livemode: false
+metadata: {}
+name: 聖誕皮卡
+package_dimensions:
+shippable:
+statement_descriptor:
+tax_code:
+type: service
+unit_label:
+updated: 1641744834
+url:
+---
+id: prod_Kvvv4cJRUqKLNz
+object: product
+active: true
+attributes: []
+created: 1641744930
+description:
+images: []
+livemode: false
+metadata: {}
+name: CatToy
+package_dimensions:
+shippable:
+statement_descriptor:
+tax_code:
+type: service
+unit_label:
+updated: 1641744930
+url:
+---
+id: prod_Kvvxm4y8aR7jwY
+object: product
+active: true
+attributes: []
+created: 1641745076
+description:
+images: []
+livemode: false
+metadata: {}
+name: AmiCat
+package_dimensions:
+shippable:
+statement_descriptor:
+tax_code:
+type: service
+unit_label:
+updated: 1641745076
+url:
