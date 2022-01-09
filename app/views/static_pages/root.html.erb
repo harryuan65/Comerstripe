@@ -1,5 +1,8 @@
 <h1>Dev Office Hours</h1>
 <p>Find me in app/views/static_pages/root.html.erb</p>
+
+<ul id="orders"></ul>
+
 <button type="submit" id="btn">Create Order</button>
 
 <script charset="utf-8">
@@ -17,7 +20,7 @@
         order: {
         status: 'paid',
         paid_at: 1641739300,
-        stripe_id: 'pi_123',
+        stripe_id: `pi_123 ${new Date()}`,
         },
         authenticity_token: '<%= form_authenticity_token %>'
         // document.querySelector('meta[name="csrf-token"]').content
@@ -27,4 +30,15 @@
     .then(data => console.log('Success: ', data))
     .catch(error => console.error('Error: ', error))
   })
+
+  const ordersUl = document.getElementById('orders');
+  fetch('/orders')
+  .then(res => res.json())
+  .then(orders => {
+    console.log(orders)
+    orders.forEach(order => {
+      ordersUl.innerHTML += `<li>${order.id} from ${order.created_at}</li>`
+    });
+  })
+  .catch(e => console.error(e))
 </script>
