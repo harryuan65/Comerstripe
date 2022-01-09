@@ -1,11 +1,12 @@
-class WebhooksController < ApplicationController
+class StripeController < ApplicationController
   skip_before_action :verify_authenticity_token
 
-  def create
+  def webhooks
     payload = request.body.read
     sig_header = request.env['HTTP_STRIPE_SIGNATURE']
     event = nil
     endpoint_secret = Rails.application.credentials.stripe[:webhook_key]
+    return render json: { msg: 'missing headers' } unless sig_header
 
     begin
       event = Stripe::Webhook.construct_event(
