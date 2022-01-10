@@ -1,30 +1,30 @@
 ---
-id: ch_3KG5T5FUSUvjNxGl1dIT7JaY
+id: ch_3KGDmzFUSUvjNxGl2ZMtoRtJ
 object: charge
-amount: 2000
-amount_captured: 2000
+amount: 99900
+amount_captured: 99900
 amount_refunded: 0
 application:
 application_fee:
 application_fee_amount:
-balance_transaction: txn_3KG5T5FUSUvjNxGl15JVfdst
+balance_transaction: txn_3KGDmzFUSUvjNxGl2hNaDtiw
 billing_details:
   address:
     city:
-    country:
+    country: TW
     line1:
     line2:
     postal_code:
     state:
-  email:
-  name:
+  email: harryuan.65@gmail.com
+  name: TEST HARRY
   phone:
-calculated_statement_descriptor: Stripe
+calculated_statement_descriptor: AMICAT PURCHASE
 captured: true
-created: 1641750371
-currency: usd
-customer:
-description: "(created by Stripe CLI)"
+created: 1641782370
+currency: twd
+customer: cus_Kw5zAzTBEYUAHQ
+description:
 destination:
 dispute:
 disputed: false
@@ -40,22 +40,22 @@ outcome:
   network_status: approved_by_network
   reason:
   risk_level: normal
-  risk_score: 60
+  risk_score: 62
   seller_message: Payment complete.
   type: authorized
 paid: true
-payment_intent: pi_3KG5T5FUSUvjNxGl1hSM9roq
-payment_method: pm_1KG5T5FUSUvjNxGlHMK677Nz
+payment_intent: pi_3KGDmzFUSUvjNxGl2YDyLCUH
+payment_method: pm_1KGDnBFUSUvjNxGlHVCz4Xyr
 payment_method_details:
   card:
     brand: visa
     checks:
       address_line1_check:
       address_postal_code_check:
-      cvc_check:
+      cvc_check: pass
     country: US
-    exp_month: 1
-    exp_year: 2023
+    exp_month: 4
+    exp_year: 2024
     fingerprint: 3X8tJ0hhJJtKQ3mq
     funding: credit
     installments:
@@ -66,27 +66,16 @@ payment_method_details:
   type: card
 receipt_email:
 receipt_number:
-receipt_url: https://pay.stripe.com/receipts/acct_1KFvScFUSUvjNxGl/ch_3KG5T5FUSUvjNxGl1dIT7JaY/rcpt_KvxN8RzWu3UI8w8TOFFdPCBA5yBW1JE
+receipt_url: https://pay.stripe.com/receipts/acct_1KFvScFUSUvjNxGl/ch_3KGDmzFUSUvjNxGl2ZMtoRtJ/rcpt_Kw5ze5SYdmPhwufw2OJXeWhY4pOj1u9
 refunded: false
 refunds:
   object: list
   data: []
   has_more: false
   total_count: 0
-  url: "/v1/charges/ch_3KG5T5FUSUvjNxGl1dIT7JaY/refunds"
+  url: "/v1/charges/ch_3KGDmzFUSUvjNxGl2ZMtoRtJ/refunds"
 review:
 shipping:
-  address:
-    city: San Francisco
-    country: US
-    line1: 510 Townsend St
-    line2:
-    postal_code: '94103'
-    state: CA
-  carrier:
-  name: Jenny Rosen
-  phone:
-  tracking_number:
 source:
 source_transfer:
 statement_descriptor:

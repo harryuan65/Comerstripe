@@ -1,0 +1,31 @@
+---
+id: cus_Kw5zAzTBEYUAHQ
+object: customer
+address:
+  city:
+  country: TW
+  line1:
+  line2:
+  postal_code:
+  state:
+balance: 0
+created: 1641782370
+currency:
+default_source:
+delinquent: false
+description:
+discount:
+email: harryuan.65@gmail.com
+invoice_prefix: '0295B4BF'
+invoice_settings:
+  custom_fields:
+  default_payment_method:
+  footer:
+livemode: false
+metadata: {}
+name: TEST HARRY
+next_invoice_sequence: 1
+phone:
+preferred_locales: []
+shipping:
+tax_exempt: none

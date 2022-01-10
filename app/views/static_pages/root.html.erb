@@ -4,6 +4,12 @@
 <ul id="orders"></ul>
 
 <button type="submit" id="btn">Create Order</button>
+<!--<form action="<%= create_checkout_session_path%>" method="post">
+  <button type="submit">Purchase</button>
+</form>-->
+<button type="submit" form="checkout">Purchase</button>
+<%= form_with url: create_checkout_session_path, id: 'checkout', style: 'visibilty: hidden'  do; end %>
+
 
 <script charset="utf-8">
   const btn = document.querySelector('#btn');
@@ -40,4 +46,38 @@
     });
   })
   .catch(e => console.error(e))
+
+   var createCheckoutSession = function(priceId) {
+      return fetch("/stripe/create_checkout_session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          priceId: priceId,
+          // userId: userId
+        })
+      }).then(function(result) {
+        return result.json();
+      });
+    };
+
+    var stripe = Stripe('<%= Rails.application.credentials.stripe[:public_key] %>');
+
+    document.getElementById('checkout').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var element = e.target
+      var productId = 'price_1KG41mFUSUvjNxGlkaLEznTX'//element.data("product-id");
+      // var userId = '<%#@current_user.id %>';
+
+      createCheckoutSession(productId).then(function(data) {
+        // Call Stripe.js method to redirect to the new Checkout page
+        stripe
+          .redirectToCheckout({
+            sessionId: data.session_id
+          }).then(function (result) {
+            return result.error.message;
+          });
+      });
+    })
 </script>

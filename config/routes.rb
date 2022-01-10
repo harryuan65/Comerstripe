@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   scope :stripe, controller: :stripe do
     post :webhooks
     post :create_checkout_session
+    get :success
+    get :failure
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

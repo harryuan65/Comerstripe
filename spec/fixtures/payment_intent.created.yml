@@ -1,7 +1,7 @@
 ---
-id: pi_3KG5T5FUSUvjNxGl1hSM9roq
+id: pi_3KGDmzFUSUvjNxGl2YDyLCUH
 object: payment_intent
-amount: 2000
+amount: 99900
 amount_capturable: 0
 amount_received: 0
 application:
@@ -15,13 +15,13 @@ charges:
   data: []
   has_more: false
   total_count: 0
-  url: "/v1/charges?payment_intent=pi_3KG5T5FUSUvjNxGl1hSM9roq"
-client_secret: pi_3KG5T5FUSUvjNxGl1hSM9roq_secret_uP4teaoxsl4e71ZXHvI32jgr2
+  url: "/v1/charges?payment_intent=pi_3KGDmzFUSUvjNxGl2YDyLCUH"
+client_secret: pi_3KGDmzFUSUvjNxGl2YDyLCUH_secret_Fma9oZbqDlsjrlatItDEo5Gtg
 confirmation_method: automatic
-created: 1641750371
-currency: usd
+created: 1641782357
+currency: twd
 customer:
-description: "(created by Stripe CLI)"
+description:
 invoice:
 last_payment_error:
 livemode: false
@@ -41,17 +41,6 @@ receipt_email:
 review:
 setup_future_usage:
 shipping:
-  address:
-    city: San Francisco
-    country: US
-    line1: 510 Townsend St
-    line2:
-    postal_code: '94103'
-    state: CA
-  carrier:
-  name: Jenny Rosen
-  phone:
-  tracking_number:
 source:
 statement_descriptor:
 statement_descriptor_suffix:

@@ -1,0 +1,50 @@
+---
+id: cs_test_a1tVKBKZEIlHBZL6FVKj80ja4RGCyyTKCWPJvCd22fYTMICbRXg82Abryp
+object: checkout.session
+after_expiration:
+allow_promotion_codes:
+amount_subtotal: 99900
+amount_total: 99900
+automatic_tax:
+  enabled: false
+  status:
+billing_address_collection:
+cancel_url: http://localhost:3000/stripe/cancel
+client_reference_id:
+consent:
+consent_collection:
+currency: twd
+customer: cus_Kw5zAzTBEYUAHQ
+customer_details:
+  email: harryuan.65@gmail.com
+  phone:
+  tax_exempt: none
+  tax_ids: []
+customer_email:
+expires_at: 1641868757
+livemode: false
+locale:
+metadata: {}
+mode: payment
+payment_intent: pi_3KGDmzFUSUvjNxGl2YDyLCUH
+payment_method_options: {}
+payment_method_types:
+- card
+payment_status: paid
+phone_number_collection:
+  enabled: false
+recovered_from:
+setup_intent:
+shipping:
+shipping_address_collection:
+shipping_options: []
+shipping_rate:
+status: complete
+submit_type:
+subscription:
+success_url: http://localhost:3000/stripe/success
+total_details:
+  amount_discount: 0
+  amount_shipping: 0
+  amount_tax: 0
+url:
